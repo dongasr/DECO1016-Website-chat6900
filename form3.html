@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="form-css.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600&display=swap" rel="stylesheet">
+    <title>Set a Password</title>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="img/flybuys-blue.png" alt="logo">
+    </header>
+
+    <main>
+
+            <div class="titles">
+                <h1> Set a Password </h1>
+            </div>
+                    
+            <hr>
+
+                <div class="mandatory">
+                    <p> * marks mandatory fields </p>
+                </div>
+    
+                <form id="form1">
+    
+                    <div class="form-group">
+                        <label for="password"> Password* </label> <br>
+                        <input type="password" name="Password" id="password" placeholder="Set a Password" onfocusout="validatePassword()">
+                        <div class="messages"></div>
+                    </div>  
+                                    
+                    <div class="form-group">
+                        <label for="confirmPassword"> Confirm Password* </label> <br>
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm your Password" onfocusout="validateConfirmPassword()">
+                        <div class="messages"></div>
+                    </div>
+    
+                </form>
+        <br>
+    
+    
+    
+    
+    
+        <br>
+            <hr>
+                
+                <form>
+                    <div class="form-group">
+                        <button type="submit"> <a href="endpoint.html"> SUBMIT </a> </button> 
+                    </div>
+                </form>
+
+    </main>
+
+    <script type="text/javascript" src="form-js.js"></script>
+    
+</body>
+</html>

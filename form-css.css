@@ -1,0 +1,231 @@
+/* CSS FOR SIGN UP FORMS */
+
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+}
+
+
+
+header {
+    height: 30px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10px;
+    box-shadow: 0 3px 20px rgb(128, 128, 128);
+}
+
+.logo {
+    height: 100px;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 20px;
+    display: flex;
+    display: block;
+    object-fit: contain;
+    max-width: 400px;
+    width: 60%;
+
+}
+
+
+@media screen and (max-width:500px) {
+    .logo {
+        margin-left: 100px;  
+    }
+}
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+
+body {
+    background-color: rgba(164, 211, 223, 0.4);
+    color: Black;
+}
+
+
+main {
+    width: 60%;
+    background: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 10px; 
+    box-shadow: -2px 4px 13px rgba(0, 0, 0, 0.2);
+
+    align-content: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.titles h1 {
+    text-align: center;
+    color: rgb(0,180,197);
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.mandatory {
+    font-size: 12px;
+    margin-left: 70px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 30px;
+}
+
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form * {
+    box-sizing: content-box;
+}
+
+form .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form > .form-group > label {
+    text-align: left;
+    padding-bottom: 5px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 120px;
+    max-width: 120px;
+    font-weight: 600;
+}
+
+input::placeholder {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+
+form > .form-group > label > span {
+    display: block;
+    font-size: 0.75em;
+}
+
+form > .form-group > label + * {
+    flex: 1 0 auto;
+}
+
+form .form-group input,
+form .form-group select {
+    padding: 15px;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+
+form .form-group button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+
+    padding: 14px 25px;
+    border: 3px solid rgb(0,180,197);
+    background: white;
+    border-radius: 30px;
+
+    color: rgb(0,180,197);
+    font-weight: 300px;
+    font-size: 19px;
+    letter-spacing: 1px;
+
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+
+    text-decoration: none;
+
+    margin-top: 20px;
+}
+
+form .form-group button:hover {
+    background:rgb(0,180,197);
+    color: white;
+    letter-spacing: 2px;
+
+    text-decoration: none;
+}
+
+
+form .messages {
+    flex: 0 0 100%;
+    text-align: right;
+    padding: 5px 0;
+    color: blue;
+}
+
+
+@media screen and (max-width: 400px) {
+    main {
+        width: auto;
+        border-radius: 0;
+    }
+
+    form {
+        width: 100px;
+    }
+
+    form > .form-group > label {
+        flex: 0 0 100%;
+        text-align: left;
+        padding: 10px;
+    }
+
+    form > .form-group > label + * {
+        flex: 0 0 100%;
+    }
+
+    form .form-group button {
+        width: 100%;
+    }
+
+    .titles h1 {
+        width: 100px;
+    }
+
+
+}
