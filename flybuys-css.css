@@ -107,7 +107,7 @@ button:hover {
 // background image is for some reason not loading on github webpage, but loading in visual studio code//
 
 #flybuys-welcome {
-    background-image: url('../img/balloons.jpg');
+    background-image: url('img/balloons.jpg');
     background-size: cover;
     background-position: center;
     height: 600px;
